@@ -53,5 +53,13 @@ docker network inspect docker_lab_backend1
 To delete all images
 ```
 docker rmi -f $(docker images -aq)
+```
 
+To delete all containers including its volumes use,
+```
+docker rm -vf $(docker ps -aq)
+```
+Delete EVERYTHING
+```
+docker system prune -a --volumes
 ```
