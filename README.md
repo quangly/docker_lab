@@ -43,3 +43,15 @@ docker exec -it [DOCKER CONTAINER ID]] bash
 docker ps -aq | xargs docker stop | xargs docker rm
 ```
 
+To Inspect network
+```
+docker network ls
+docker network inspect <network name> 
+docker network inspect docker_lab_backend1
+```
+
+To delete all images
+```
+docker rmi -f $(docker images -aq)
+
+```

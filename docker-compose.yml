@@ -4,12 +4,23 @@ services:
     build: .
     ports:
       - "8080:8080"
+    networks:
+      - backend1
+  web2:
+    build: .
+    ports:
+      - "8081:8080"
+    networks:
+      - backend1
   db:
     image: "mysql"
     environment:
       MYSQL_ROOT_PASSWORD: MYSQL_ROOT_PASSWORD
     volumes:
       - db-data:/foo
+
+networks:
+  backend1:
 
 volumes:
   db-data:
