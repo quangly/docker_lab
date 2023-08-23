@@ -55,6 +55,11 @@ To delete all images
 docker rmi -f $(docker images -aq)
 ```
 
+To view docker logs
+```
+docker logs [CONTAINER_ID]
+```
+
 To delete all containers including its volumes use,
 ```
 docker rm -vf $(docker ps -aq)
