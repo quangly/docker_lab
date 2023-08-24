@@ -6,6 +6,9 @@ Dockerize a Node.js app.
 #Build
 ```
 docker build -t deltadreams/demoapp:1.0 .
+
+docker pull mongo
+docker pull mongo-express
 ```
 
 #create volume to be shared across containers
