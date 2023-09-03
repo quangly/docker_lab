@@ -7,6 +7,11 @@ This demo app shows a simple user profile app set up using
 
 All components are docker-based
 
+![alt text](images/app.png)
+![alt text](images/mongo-express.png)
+
+
+
 ### With Docker
 
 #### To start the application

@@ -5,7 +5,7 @@ Dockerize a Node.js app.
 
 #Build
 ```
-docker build -t deltadreams/demoapp:1.0 .
+docker build -t my-app:1.0 .
 
 docker pull mongo
 docker pull mongo-express
@@ -23,7 +23,7 @@ docker run --mount source=shared-stuff,target=/stuff
 
 #Run
 ```
-docker run -p 5001:8080 deltadreams/demoapp:1.0 
+docker run -p 3000:3000 my-app:1.0 
 ```
 
 or
