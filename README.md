@@ -73,3 +73,7 @@ Step 5: access the nodejs application from browser
     docker build -t my-app:1.0 .       
     
 The dot "." at the end of the command denotes location of the Dockerfile.
+
+### To view mongo-data volume location
+
+    docker volume inspect docker_lab_mongo-data
